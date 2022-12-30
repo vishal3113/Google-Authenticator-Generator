@@ -3,6 +3,7 @@
 session_start();
 require "Authenticator.php";
 
+
     $Authenticator = new Authenticator();
     if (!isset($_SESSION['auth_secret'])) {
         $secret = $Authenticator->generateRandomSecret();
